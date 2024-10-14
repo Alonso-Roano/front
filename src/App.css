@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+}
+.estudiantes{
+  width: 100vw;
+  min-height: 100vh;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+article{
+  max-width: 300px;
+  min-width: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #666;
+  border-radius: 10px;
+  padding: 15px;
+}
+input{
+  font-size: 17px;
+  padding: 4px 7px 4px 7px;
+  border-radius: 5px;
+  background-color: #242424;
+  outline: none;
+  border: none;
+  transition: all .1s ease-in;
+}
+
+input:focus{
+  transform: translateY(-2px);
+  transition: all .1s ease-in;
+  box-shadow: 0px 3px 5px #000;
+}
+
+button{
+  border: none !important;
+  transition: all .1s ease;
+}
+
+button:hover {
+  box-shadow: 0px 0px 5px #000;
+  border: none !important;
+  transition: all .1s ease;
+}
+
+.lista{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-content: start;
+}
+.lista span{
+  min-width: 100px;
+  width: 100%;
+  max-width: 200px;
+  background-color: #eee;
+  color: #242424;
+  padding: 15px;
+  font-size: 15px;
+  height: fit-content;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.lista span p{
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .estudiantes{
+    grid-template-columns: 1fr;
+  }
+}
